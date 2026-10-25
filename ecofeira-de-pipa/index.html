@@ -1,44 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>A Ecofeira de Pipa</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='src/index.css'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f5ed">
+    <meta name="description" content="Conheça a Ecofeira da Pipa: economia solidária, produtos locais e cultura na Praia de Pipa.">
+    <title>Ecofeira da Pipa — Cultura, sabor e economia solidária</title>
+    <link rel="stylesheet" href="src/index.css">
 </head>
 <body>
-    <div class="container">
-        <header class="text-center my-5">
-            <h1>A Ecofeira de Pipa</h1>
-            <p>Venha participar de um evento sustentável e divertido!</p>
+    <div class="site-shell">
+        <header class="site-header">
+            <a class="brand" href="#inicio" aria-label="Ecofeira da Pipa — início">
+                <img class="brand-logo" src="src/assets/ecofeira-logo-cropped.png" alt="Ecofeira da Pipa — Produtos Agroecológicos e Artesanais">
+            </a>
+            <nav aria-label="Navegação principal">
+                <a href="#sobre">A feira</a>
+                <a href="#produtos">O que encontrar</a>
+                <a href="#cultura">Cultura</a>
+            </nav>
         </header>
         <main>
-            <section class="mb-5">
-                <h2>Sobre o Evento</h2>
-                <p>A Ecofeira de Pipa é um evento que promove a sustentabilidade e a criatividade. Venha aprender a fazer pipas com materiais recicláveis e participar de diversas atividades para toda a família!</p>
+            <section class="hero" id="inicio">
+                <div class="hero-copy">
+                    <p class="eyebrow">Praia de Pipa · Tibau do Sul</p>
+                    <h1>Mais que uma feira,<br><span>um movimento.</span></h1>
+                    <p class="hero-description">Um encontro de pessoas, saberes e sabores que fortalece a economia solidária e celebra a comunidade de Pipa.</p>
+                    <a class="text-link" href="#sobre">Conheça a Ecofeira <span aria-hidden="true">↓</span></a>
+                </div>
+                <img class="hero-art" src="src/assets/portfolio-photo-3.jpg" alt="Feirantes e visitantes na Ecofeira ao ar livre, com um arco-íris ao fundo">
+                <span class="hero-note">Feita com a comunidade, para a comunidade.</span>
             </section>
-            <section class="mb-5">
-                <h2>Detalhes do Evento</h2>
-                <ul>
-                    <li><strong>Data:</strong> 15 de Outubro de 2023</li>
-                    <li><strong>Local:</strong> Parque da Cidade</li>
-                    <li><strong>Horário:</strong> 10h às 17h</li>
-                </ul>
+            <section class="about section-wrap" id="sobre">
+                <div class="section-heading">
+                    <p class="eyebrow">Encontro que transforma</p>
+                    <h2>Uma rede que cultiva<br>vida em comunidade.</h2>
+                </div>
+                <div class="about-copy">
+                    <p>A Ecofeira da Pipa é uma associação autogestionada que promove a economia solidária. É espaço para quem produz, cria e compartilha com cuidado — valorizando a cultura local e aproximando pessoas.</p>
+                    <div class="stats" aria-label="Números da Ecofeira">
+                        <div class="stat"><strong>25</strong><span>feirantes hoje</span></div>
+                        <div class="stat"><strong>21</strong><span>mulheres na feira</span></div>
+                        <div class="stat"><strong>4</strong><span>feirantes indígenas</span></div>
+                        <div class="stat"><strong>+60</strong><span>famílias já fizeram parte</span></div>
+                    </div>
+                    <p class="source-note">Números apresentados no material de divulgação da Ecofeira.</p>
+                </div>
             </section>
-            <section class="text-center">
-                <h2>Participe!</h2>
-                <p>Não perca essa oportunidade de se divertir e aprender sobre sustentabilidade!</p>
-                <button class="btn btn-primary">Inscreva-se Agora</button>
+            <section class="products section-wrap" id="produtos">
+                <div class="products-copy">
+                    <p class="eyebrow">Feito por gente da gente</p>
+                    <h2>Sabores, criações<br>e cuidado local.</h2>
+                    <p>Cada banca traz um pouco da diversidade e do talento de quem faz parte da feira.</p>
+                    <ul class="product-list">
+                        <li>Produtos agroecológicos e orgânicos</li>
+                        <li>Alimentos vegetarianos e veganos</li>
+                        <li>Opções sem lactose e sem glúten</li>
+                        <li>Artesanato feito por mulheres</li>
+                        <li>Plantas, cosméticos naturais e terapias</li>
+                        <li>Livros e saberes populares</li>
+                    </ul>
+                </div>
+                <img class="products-art" src="src/assets/portfolio-photo-2.jpg" alt="Bancas de produtos da Ecofeira ao ar livre" loading="lazy">
+            </section>
+            <section class="culture" id="cultura">
+                <img class="culture-art" src="src/assets/portfolio-photo-1.jpg" alt="Comunidade reunida na Ecofeira durante um encontro à noite" loading="lazy">
+                <div class="culture-copy">
+                    <p class="eyebrow">Ecofeira Cultural</p>
+                    <h2>Cultura viva,<br>saberes compartilhados.</h2>
+                    <p>Música, teatro, capoeira, zambê, literatura e saberes populares fazem da feira um espaço aberto para encontros e celebrações.</p>
+                    <div class="topic-tags" aria-label="Temas valorizados pela Ecofeira">
+                        <span>Sustentabilidade</span>
+                        <span>Feminismo e equidade de gênero</span>
+                        <span>Culturas afro-brasileiras e indígenas</span>
+                        <span>Agricultura familiar</span>
+                        <span>Economia solidária</span>
+                    </div>
+                </div>
             </section>
         </main>
-        <footer class="text-center my-5">
-            <p>&copy; 2023 A Ecofeira de Pipa. Todos os direitos reservados.</p>
+        <footer class="site-footer">
+            <a class="brand footer-brand" href="#inicio" aria-label="Ecofeira da Pipa — voltar ao início">
+                <img class="brand-logo" src="src/assets/ecofeira-logo-cropped.png" alt="">
+            </a>
+            <p>Economia solidária, cultura e comunidade na Praia de Pipa.</p>
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
