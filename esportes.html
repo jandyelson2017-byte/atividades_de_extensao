@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ESPORTE: Educação, lazer e inclusão</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="esportes.css">
+</head>
+<body>
+
+    <!-- Link de acessibilidade para pular direto para o conteúdo (Leitores de tela) -->
+    <a href="#conteudo-principal" class="pular-navegacao">Pular para o conteúdo principal</a>
+
+    <!-- Menu Superior Fixo -->
+    <nav class="navegacao" aria-label="Menu principal">
+        <a href="#inicio" class="logo-link" aria-label="IFRN Canguaretama - início">
+            <img src="ifrn.png" alt="IFRN Campus Canguaretama" class="logo-ifrn">
+        </a>
+        <ul class="menu">
+            <li><a href="#inicio" class="menu-link">Início</a></li>
+            <li><a href="#sobre" class="menu-link">Sobre</a></li>
+            <li><a href="#galeria" class="menu-link">Galeria</a></li>
+            <li><a href="#midia" class="menu-link">Vídeo</a></li>
+        </ul>
+    </nav>
+
+    <!-- Título Principal -->
+    <header id="inicio" class="cabecalho animacao-suave">
+        <h1>ESPORTE: Educação, lazer e inclusão</h1>
+        <p>Projeto de extensão IFRN - Canguaretama</p>
+    </header>
+
+    <main id="conteudo-principal">
+        <!-- Seção de Texto (Atualizada para o presente e sem termos acadêmicos) -->
+        <section id="sobre" class="secao-sobre animacao-suave">
+            <div class="caixa-vidro">
+                <h2>Sobre o Projeto</h2>
+                <p>Este projeto de extensão oferece práticas esportivas regulares para a comunidade do IFRN - Canguaretama. O projeto acontece durante 10 meses nas dependências do campus, contemplando 50 participantes da comunidade escolar.</p>
+                <br>
+                <p>As aulas ocorrem uma vez por semana, com duas horas de duração, divididas em duas turmas: terças-feiras à noite (19h às 20h30) e quintas-feiras pela manhã (10h30 às 12h). O esporte é o nosso grande eixo norteador para as atividades.</p>
+                <br>
+                <p>Nosso principal objetivo, além de promover a atividade física de forma regular, é incentivar os participantes a incorporarem o esporte em seu tempo livre. Também buscamos desenvolver habilidades práticas, melhorar a comunicação e fortalecer os laços sociais entre todos.</p>
+            </div>
+        </section>
+
+        <!-- Seção de Imagens (Galeria Responsiva) -->
+        <section id="galeria" class="projetos animacao-suave">
+            <h2>Nossa Comunidade em Ação</h2>
+            <div class="projetos-caixa">
+                
+                <!-- Card 1 -->
+                <div class="projetos-card">
+                    <img src="WhatsApp Image 2026-10-27 at 10.57.55(1).jpeg" alt="Quatro pessoas jogando pickleball em uma quadra coberta no IFRN, com a rede montada ao centro." class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">Partidas Dinâmicas</h3>
+                        <p class="paragrafo-projetos">Jogos interativos na quadra do campus.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="projetos-card">
+                    <img src="WhatsApp Image 2026-10-27 at 10.57.54(4).jpeg" alt="Duas mulheres sorrindo alegremente enquanto jogam pickleball, uma delas segurando a raquete levantada para o alto." class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">Lazer e Diversão</h3>
+                        <p class="paragrafo-projetos">Momentos de descontração e prática esportiva.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="projetos-card">
+                    <img src="WhatsApp Image 2026-10-27 at 10.58.34.jpeg" alt="Grande grupo de participantes do projeto posando sorridentes para uma foto coletiva no centro da quadra esportiva." class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">Inclusão Social</h3>
+                        <p class="paragrafo-projetos">Integração de toda a comunidade escolar.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seção de Vídeo HTML5 -->
+        <section id="midia" class="secao-midia animacao-suave">
+            <h2>Conheça o Projeto</h2>
+            <div class="caixa-vidro">
+                <video width="100%" controls class="video-responsivo" aria-label="Vídeo demonstrativo de uma partida de pickleball na quadra do IFRN.">
+                    <source src="WhatsApp Video 2026-10-27 at 10.57.55(1).mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+/* Variáveis de cores baseadas em design inclusivo e baixo brilho (TEA friendly) */
+:root {
+    --fundo-principal: #F4F7F6;
+    --texto-principal: #2D3748;
+    --cor-destaque: #3b82f6; 
+    --fundo-caixa: rgba(255, 255, 255, 0.65);
+    --borda-suave: rgba(45, 55, 72, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--fundo-principal);
+    color: var(--texto-principal);
+    line-height: 1.6;
+}
+
+/* --- ACESSIBILIDADE --- */
+/* Link invisível que aparece apenas quando o usuário aperta 'TAB' (Leitor de Tela) */
+.pular-navegacao {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--cor-destaque);
+    color: white;
+    padding: 8px;
+    z-index: 2000;
+    transition: top 0.3s ease;
+}
+
+.pular-navegacao:focus {
+    top: 0;
+}
+
+/* Foco visível para navegação por teclado */
+a:focus-visible, video:focus-visible {
+    outline: 3px solid var(--cor-destaque);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+/* --- ANIMAÇÕES LEVES --- */
+.animacao-suave {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- NAVEGAÇÃO --- */
+.navegacao {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(244, 247, 246, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--borda-suave);
+}
+
+.logo-link {
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    display: flex;
+    align-items: center;
+    transform: translateY(-50%);
+}
+
+.logo-ifrn {
+    display: block;
+    width: auto;
+    height: 54px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite quebrar linha no celular */
+    list-style: none;
+    gap: 2rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--texto-principal);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.menu-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--cor-destaque);
+    transition: width 0.3s ease;
+}
+
+.menu-link:hover::after, .menu-link:focus-visible::after {
+    width: 100%;
+}
+
+/* --- CABEÇALHO --- */
+.cabecalho {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 20px 40px 20px;
+}
+
+.cabecalho h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem); /* Tamanho responsivo que se adapta à tela */
+    margin-bottom: 1rem;
+}
+
+/* --- SEÇÕES GERAIS E CAIXAS --- */
+.secao-sobre, .projetos, .secao-midia {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.caixa-vidro {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background: var(--fundo-caixa);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--borda-suave);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.caixa-vidro h2, .projetos h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* --- GRID DE IMAGENS (CARDS) --- */
+.projetos-caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.projetos-card {
+    background: var(--fundo-caixa);
+    border: 1px solid var(--borda-suave);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projetos-card:hover, .projetos-card:focus-within {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.projetos-imagem {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.caixa-textos-projeto {
+    padding: 1.5rem;
+}
+
+/* --- VÍDEO --- */
+.video-responsivo {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Responsividade extra para celulares */
+@media (max-width: 768px) {
+    .logo-link { left: 0.75rem; }
+    .logo-ifrn { height: 42px; }
+    .menu { gap: 0.75rem; padding-left: 2.5rem; }
+    .caixa-vidro { padding: 1.5rem; }
+}
