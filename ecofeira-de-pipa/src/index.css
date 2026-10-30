@@ -36,6 +36,13 @@ a {
     margin: 0 auto;
     overflow: hidden;
     background: var(--cream);
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(110, 91, 56, 0.018) 0,
+        rgba(110, 91, 56, 0.018) 1px,
+        transparent 1px,
+        transparent 5px
+    );
 }
 
 .site-header {
@@ -79,7 +86,31 @@ a {
     grid-template-columns: 0.9fr 1.1fr;
     align-items: center;
     padding: 65px 8% 80px;
-    background: #e8ead6;
+    background:
+        radial-gradient(ellipse at 10% 100%, rgba(133, 153, 86, 0.15), transparent 42%),
+        #e8ead6;
+}
+
+.leaf-decoration {
+    position: absolute;
+    z-index: 1;
+    width: 170px;
+    height: auto;
+    opacity: 0.48;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    user-select: none;
+    clip-path: polygon(
+        0 0, 32% 0, 32% 25%, 40% 25%, 40% 0,
+        52% 0, 52% 16%, 59% 16%, 59% 0,
+        100% 0, 100% 100%, 0 100%
+    );
+}
+
+.hero-leaf {
+    top: 20px;
+    right: 4%;
+    transform: rotate(-12deg);
 }
 
 .hero-copy {
@@ -156,10 +187,18 @@ h1 span {
 }
 
 .about {
+    position: relative;
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
     gap: 9%;
     align-items: start;
+}
+
+.about-leaf {
+    bottom: 20px;
+    left: 2%;
+    width: 145px;
+    transform: rotate(12deg);
 }
 
 h2 {
@@ -186,8 +225,9 @@ h2 {
 .stat {
     min-height: 105px;
     padding: 17px 10px 13px;
+    border: 1px solid rgba(104, 119, 72, 0.12);
     border-radius: 13px;
-    background: #eeeee1;
+    background: linear-gradient(145deg, #f3f1e7, #e9ebdc);
     text-align: center;
 }
 
@@ -213,11 +253,21 @@ h2 {
 }
 
 .products {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 0.85fr;
     align-items: center;
     gap: 9%;
-    background: #f0ede2;
+    background:
+        radial-gradient(ellipse at 100% 0, rgba(133, 153, 86, 0.12), transparent 38%),
+        #f0ede2;
+}
+
+.products-leaf {
+    top: 20px;
+    right: 2%;
+    width: 155px;
+    transform: rotate(-8deg);
 }
 
 .products-copy > p:not(.eyebrow) {
@@ -244,13 +294,14 @@ h2 {
 
 .product-list li::before {
     position: absolute;
-    top: 6px;
+    top: 7px;
     left: 0;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
+    width: 9px;
+    height: 7px;
+    border-radius: 0 100% 0 100%;
     background: #92a45c;
     content: '';
+    transform: rotate(-35deg);
 }
 
 .products-art {
@@ -261,12 +312,26 @@ h2 {
 }
 
 .culture {
+    position: relative;
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
     gap: 8%;
     align-items: center;
     padding: 90px 11%;
     background: var(--deep-green);
+}
+
+.culture-leaf {
+    top: 10px;
+    right: 3%;
+    width: 155px;
+    opacity: 0.2;
+    transform: rotate(12deg);
+}
+
+.culture-copy {
+    position: relative;
+    z-index: 1;
 }
 
 .culture-art {
@@ -333,6 +398,22 @@ h2 {
 }
 
 @media (max-width: 760px) {
+    .hero-leaf {
+        width: 130px;
+    }
+
+    .about-leaf {
+        width: 112px;
+    }
+
+    .products-leaf {
+        width: 120px;
+    }
+
+    .culture-leaf {
+        width: 120px;
+    }
+
     .site-header {
         height: auto;
         min-height: 92px;
@@ -347,6 +428,11 @@ h2 {
     .hero {
         grid-template-columns: 1fr;
         padding: 60px 7% 76px;
+    }
+
+    .hero-leaf {
+        top: 12px;
+        right: 2%;
     }
 
     .hero-art {
@@ -378,6 +464,11 @@ h2 {
 
     .culture {
         padding: 65px 7%;
+    }
+
+    .culture-leaf {
+        top: 4px;
+        right: 1%;
     }
 
     .culture-art {
