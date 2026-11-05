@@ -26,7 +26,6 @@ const App = () => (
                 <a href="#sobre">A feira</a>
                 <a href="#produtos">O que encontrar</a>
                 <a href="#cultura">Cultura</a>
-                <a href="https://www.instagram.com/ecofeiradapipa/" target="_blank" rel="noopener noreferrer">Contato</a>
             </nav>
         </header>
 
@@ -125,7 +124,20 @@ const App = () => (
             <a className="brand footer-brand" href="#inicio" aria-label="Ecofeira da Pipa — voltar ao início">
                 <img className="brand-logo" src="src/assets/ecofeira-logo-instagram.jpg" alt="" />
             </a>
-            <p>Produtos locais, cultura e encontros na Praia de Pipa.</p>
+            <div className="footer-copy">
+                <p>Produtos locais, cultura e encontros na Praia de Pipa.</p>
+                <p className="footer-copyright">© Todos os direitos reservados à Ecofeira da Pipa.</p>
+            </div>
+            <a
+                className="footer-contact"
+                href="https://www.instagram.com/ecofeiradapipa/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Entre em contato pelo Instagram da Ecofeira da Pipa"
+            >
+                <span className="footer-contact-label">Contato</span>
+                <span className="footer-contact-handle">Instagram @ecofeiradapipa <span aria-hidden="true">↗</span></span>
+            </a>
         </footer>
     </div>
 );
