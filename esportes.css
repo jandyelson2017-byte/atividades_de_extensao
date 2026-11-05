@@ -225,3 +225,9 @@ a:focus-visible, video:focus-visible {
     .menu { gap: 0.75rem; padding-left: 2.5rem; }
     .caixa-vidro { padding: 1.5rem; }
 }
+
+.rodape-year {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
