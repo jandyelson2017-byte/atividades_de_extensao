@@ -20,12 +20,13 @@ const App = () => (
     <div className="site-shell">
         <header className="site-header">
             <a className="brand" href="#inicio" aria-label="Ecofeira da Pipa — início">
-                <img className="brand-logo" src="src/assets/ecofeira-logo-cropped.png" alt="Ecofeira da Pipa — Produtos Agroecológicos e Artesanais" />
+                <img className="brand-logo" src="src/assets/ecofeira-logo-instagram.jpg" alt="Ecofeira da Pipa" />
             </a>
             <nav aria-label="Navegação principal">
                 <a href="#sobre">A feira</a>
                 <a href="#produtos">O que encontrar</a>
                 <a href="#cultura">Cultura</a>
+                <a href="https://www.instagram.com/ecofeiradapipa/" target="_blank" rel="noopener noreferrer">Contato</a>
             </nav>
         </header>
 
@@ -43,8 +44,8 @@ const App = () => (
                 </div>
                 <img
                     className="hero-art"
-                    src="src/assets/portfolio-photo-3.jpg"
-                    alt="Feirantes e visitantes na Ecofeira ao ar livre, com um arco-íris ao fundo"
+                    src="src/assets/instagram-sementes-comunidade.jpg"
+                    alt="Integrantes da Ecofeira e da Aldeia Katu reunidos com sementes crioulas na feira"
                 />
                 <span className="hero-note">Feita com a comunidade, para a comunidade.</span>
             </section>
@@ -88,8 +89,8 @@ const App = () => (
                 </div>
                 <img
                     className="products-art"
-                    src="src/assets/portfolio-photo-2.jpg"
-                    alt="Bancas de produtos da Ecofeira ao ar livre"
+                    src="src/assets/instagram-feira-noturna.jpg"
+                    alt="Feirante conversa com visitantes durante a Ecofeira à noite"
                     loading="lazy"
                 />
             </section>
@@ -122,7 +123,7 @@ const App = () => (
 
         <footer className="site-footer">
             <a className="brand footer-brand" href="#inicio" aria-label="Ecofeira da Pipa — voltar ao início">
-                <img className="brand-logo" src="src/assets/ecofeira-logo-cropped.png" alt="" />
+                <img className="brand-logo" src="src/assets/ecofeira-logo-instagram.jpg" alt="" />
             </a>
             <p>Produtos locais, cultura e encontros na Praia de Pipa.</p>
         </footer>
