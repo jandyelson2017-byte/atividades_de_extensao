@@ -20,7 +20,7 @@ const App = () => (
     <div className="site-shell">
         <header className="site-header">
             <a className="brand" href="#inicio" aria-label="Ecofeira da Pipa — início">
-                <img className="brand-logo" src="src/assets/ecofeira-logo-instagram.jpg" alt="Ecofeira da Pipa" />
+                <img className="brand-logo" src="src/assets/ecofeira-logo-instagram.png" alt="Ecofeira da Pipa" />
             </a>
             <nav aria-label="Navegação principal">
                 <a href="#sobre">A feira</a>
@@ -122,7 +122,7 @@ const App = () => (
 
         <footer className="site-footer">
             <a className="brand footer-brand" href="#inicio" aria-label="Ecofeira da Pipa — voltar ao início">
-                <img className="brand-logo" src="src/assets/ecofeira-logo-instagram.jpg" alt="" />
+                <img className="brand-logo" src="src/assets/ecofeira-logo-instagram.png" alt="" />
             </a>
             <div className="footer-copy">
                 <p>Produtos locais, cultura e encontros na Praia de Pipa.</p>
