@@ -8,6 +8,7 @@
     text-rendering: optimizeLegibility;
     --green: #315d3a;
     --deep-green: #203e2a;
+    --mid-green: #294f32;
     --lime: #d9e69a;
     --cream: #f8f5ed;
     --muted: #6b7568;
@@ -371,6 +372,48 @@ h2 {
     font-weight: 600;
 }
 
+.contact {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 9%;
+    align-items: start;
+   background: var(--mid-green);
+}
+
+.contact-info {
+    padding: 24px 28px;
+   border-left: 3px solid var(--lime);
+}
+
+.contact-copy h2 {
+   color: var(--cream);
+}
+
+.contact-copy .eyebrow {
+   color: var(--lime);
+}
+
+.contact-info p {
+   margin: 0;
+   color: #d0d8c9;
+   font-size: 15px;
+   line-height: 1.8;
+}
+
+.contact-info p + p {
+    margin-top: 16px;
+}
+
+.contact-info a {
+    color: var(--lime);
+    font-weight: 700;
+    border-bottom: 1px solid var(--lime);
+}
+
+.contact-info a:hover {
+    color: #e6efb8;
+}
+
 .site-footer {
     min-height: 115px;
     display: flex;
@@ -505,6 +548,15 @@ h2 {
 
     .culture {
         padding: 65px 7%;
+    }
+
+    .contact {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .contact-info {
+        padding: 20px 22px;
     }
 
     .culture-leaf {
