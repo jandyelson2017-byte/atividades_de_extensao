@@ -214,6 +214,9 @@ a:focus-visible, video:focus-visible {
 }
 /* --- VÍDEO --- */
 .video-responsivo {
+    display: block;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
@@ -392,5 +395,59 @@ a:focus-visible, video:focus-visible {
 
     .galeria-registros img {
         height: clamp(190px, 55vw, 300px);
+    }
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+.secao-localizacao iframe {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .navegacao {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75rem;
+    }
+
+    .logo-link {
+        position: static;
+        flex: 0 0 auto;
+        transform: none;
+    }
+
+    .logo-ifrn {
+        height: 38px;
+    }
+
+    .menu {
+        flex: 1;
+        justify-content: flex-start;
+        gap: 0.25rem 0.75rem;
+        padding-left: 0;
+    }
+
+    .menu-link {
+        display: block;
+        padding: 0.25rem 0;
+        font-size: 0.875rem;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+    .cabecalho {
+        min-height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 24px;
     }
 }
