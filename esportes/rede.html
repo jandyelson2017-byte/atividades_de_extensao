@@ -1,30 +1,118 @@
 <!DOCTYPE html>
-<html lang='pt-BR'>
+<html lang="pt-BR">
+<link rel="apple-touch-icon" sizes="180x180" href="src/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="src/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="src/favicon-16x16.png">
+<link rel="manifest" href="src/site.webmanifest">
+
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Esportes de Rede</title>
+    <title>Esportes de Rede | Projeto ESPORTE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='esportes.css'>
 </head>
+
 <body>
     <a href="#conteudo-principal" class="pular-navegacao">Pular para o conteúdo principal</a>
 
     <nav class="navegacao" aria-label="Navegação da página">
-        <a href="esportes.html#modalidades" class="logo-link" aria-label="Voltar para as modalidades do projeto">
-            <img src="src/ifrn.png" alt="IFRN Campus Canguaretama" class="logo-ifrn">
+        <a href="esportes.html#inicio" class="logo-link" aria-label="Projeto ESPORTE - início">
+            <img src="src/logo_atualizado.png" alt="Projeto ESPORTE: Educação, lazer e inclusão" class="logo-ifrn">
         </a>
         <ul class="menu">
             <li><a href="esportes.html#inicio" class="menu-link">Início</a></li>
             <li><a href="esportes.html#modalidades" class="menu-link">Modalidades</a></li>
+            <li><a href="praticas.html" class="menu-link">Práticas</a></li>
+            <li><a href="invasao.html" class="menu-link">Invasão</a></li>
         </ul>
     </nav>
 
     <header class="cabecalho animacao-suave">
         <h1>Esportes de Rede</h1>
-        <p>Vôlei e Badminton</p>
+        <p>Vôlei e badminton: cooperação e estratégia</p>
     </header>
+
+    <main id="conteudo-principal">
+        <section class="secao-detalhes animacao-suave">
+            <div class="conteudo-detalhes caixa-vidro texto-destaque">
+                <h2>O que são esportes de rede?</h2>
+                <p>Nos esportes de rede divisória, os lados ou equipes ficam separados por uma rede. A disputa acontece
+                    ao enviar a bola ou outro implemento para o lado adversário, tentando dificultar a devolução e
+                    respeitando os limites e regras da modalidade.</p>
+                <p>Além da técnica, essas práticas estimulam atenção, coordenação, tomada de decisão, comunicação e
+                    respeito. Em uma proposta educativa, regras e espaço podem ser adaptados para favorecer a
+                    participação de todos.</p>
+            </div>
+        </section>
+
+        <section class="secao-detalhes">
+            <div class="conteudo-detalhes">
+                <h2>Modalidades</h2>
+                <div class="grade-descricao">
+                    <article class="cartao-descricao">
+                        <h3>Vôlei</h3>
+                        <p>Duas equipes jogam em lados opostos da quadra, separados pela rede. O objetivo é enviar a
+                            bola por cima dela e fazê-la tocar o chão do campo adversário, evitando que ela caia no
+                            próprio lado.</p>
+                        <p>As equipes organizam a recepção, o levantamento e o ataque. A comunicação e a cooperação
+                            ajudam a construir cada jogada.</p>
+                    </article>
+                    <article class="cartao-descricao">
+                        <h3>Badminton</h3>
+                        <p>Jogadores usam raquetes para rebater uma peteca por cima da rede. Pode ser disputado
+                            individualmente ou em duplas; o objetivo é fazê-la cair dentro da quadra adversária ou
+                            provocar uma devolução inválida.</p>
+                        <p>O jogo combina deslocamentos rápidos, precisão, atenção e estratégia.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-detalhes">
+            <div class="conteudo-detalhes">
+                <h2>Registros de esporte com rede no projeto</h2>
+                <p class="texto-destaque">As fotos abaixo mostram participantes em vivências de pickleball, modalidade
+                    de rede divisória prevista no projeto.</p>
+                <div class="galeria-registros">
+                    <figure>
+                        <img src="src/WhatsApp Image 2026-10-27 at 10.57.54(1).jpeg"
+                            alt="Participantes jogam pickleball em lados opostos da rede na quadra coberta."
+                            loading="lazy">
+                        <figcaption>Vivência de pickleball na quadra do campus.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="src/WhatsApp Image 2026-10-27 at 10.57.54(2).jpeg"
+                            alt="Duas participantes praticam pickleball; uma delas ergue a raquete durante a jogada."
+                            loading="lazy">
+                        <figcaption>Prática, atenção e troca de jogadas.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-detalhes">
+            <div class="conteudo-detalhes links-detalhes">
+                <a class="link-detalhe" href="praticas.html">Práticas corporais</a>
+                <a class="link-detalhe" href="invasao.html">Esportes de invasão</a>
+                <a class="link-detalhe" href="esportes.html#modalidades">Voltar às modalidades</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape-containt">
+            <div class="rodape-year">
+                <p>&copy; <span id="ano"></span> IFRN. Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("ano").textContent = new Date().getFullYear();
+    </script>
 </body>
+
 </html>
