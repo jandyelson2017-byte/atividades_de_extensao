@@ -8,7 +8,6 @@
     text-rendering: optimizeLegibility;
     --green: #315d3a;
     --deep-green: #203e2a;
-    --mid-green: #294f32;
     --lime: #d9e69a;
     --cream: #f8f5ed;
     --muted: #6b7568;
@@ -333,7 +332,7 @@ h2 {
     grid-template-columns: 0.9fr 1.1fr;
     gap: 9%;
     align-items: start;
-   background: var(--mid-green);
+   background: var(--green);
 }
 
 .contact-info {
