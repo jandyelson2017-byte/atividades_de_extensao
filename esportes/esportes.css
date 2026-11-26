@@ -231,3 +231,38 @@ a:focus-visible, video:focus-visible {
     margin-bottom: 1.5rem;
     text-align: center;
 }
+
+
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sobre-conteudo > div,
+.sobre-conteudo img {
+    flex: 1;
+    min-width: 0;
+}
+
+.sobre-conteudo img {
+    flex: 0 0 260px;
+    width: 260px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .sobre-conteudo {
+        flex-direction: column;
+    }
+
+    .sobre-conteudo img {
+        flex: none;
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        align-self: center;
+    }
+}
