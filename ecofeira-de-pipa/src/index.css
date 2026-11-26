@@ -92,28 +92,6 @@ a {
         #e8ead6;
 }
 
-.leaf-decoration {
-    position: absolute;
-    z-index: 1;
-    width: 170px;
-    height: auto;
-    opacity: 0.48;
-    mix-blend-mode: multiply;
-    pointer-events: none;
-    user-select: none;
-    clip-path: polygon(
-        0 0, 32% 0, 32% 25%, 40% 25%, 40% 0,
-        52% 0, 52% 16%, 59% 16%, 59% 0,
-        100% 0, 100% 100%, 0 100%
-    );
-}
-
-.hero-leaf {
-    top: 20px;
-    right: 4%;
-    transform: rotate(-12deg);
-}
-
 .hero-copy {
     z-index: 1;
     max-width: 500px;
@@ -195,13 +173,6 @@ h1 span {
     align-items: start;
 }
 
-.about-leaf {
-    bottom: 20px;
-    left: 2%;
-    width: 145px;
-    transform: rotate(12deg);
-}
-
 h2 {
     font-size: clamp(34px, 4vw, 50px);
     line-height: 1.18;
@@ -264,13 +235,6 @@ h2 {
         #f0ede2;
 }
 
-.products-leaf {
-    top: 20px;
-    right: 2%;
-    width: 155px;
-    transform: rotate(-8deg);
-}
-
 .products-copy > p:not(.eyebrow) {
     max-width: 430px;
     margin-top: 18px;
@@ -320,14 +284,6 @@ h2 {
     align-items: center;
     padding: 90px 11%;
     background: var(--deep-green);
-}
-
-.culture-leaf {
-    top: 10px;
-    right: 3%;
-    width: 155px;
-    opacity: 0.2;
-    transform: rotate(12deg);
 }
 
 .culture-copy {
@@ -482,22 +438,6 @@ h2 {
 }
 
 @media (max-width: 760px) {
-    .hero-leaf {
-        width: 130px;
-    }
-
-    .about-leaf {
-        width: 112px;
-    }
-
-    .products-leaf {
-        width: 120px;
-    }
-
-    .culture-leaf {
-        width: 120px;
-    }
-
     .site-header {
         height: auto;
         min-height: 92px;
@@ -512,11 +452,6 @@ h2 {
     .hero {
         grid-template-columns: 1fr;
         padding: 60px 7% 76px;
-    }
-
-    .hero-leaf {
-        top: 12px;
-        right: 2%;
     }
 
     .hero-art {
@@ -557,11 +492,6 @@ h2 {
 
     .contact-info {
         padding: 20px 22px;
-    }
-
-    .culture-leaf {
-        top: 4px;
-        right: 1%;
     }
 
     .culture-art {
